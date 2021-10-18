@@ -41,6 +41,7 @@
     <ul class="icons">
       <li class="icons-item">
         <img src="assets/images/first screen logos/019_timer_time_stopwatch_2-64.png" alt="Таймер">
+        <br>
         <p>Время подбора:<br>10 минут</p>
       </li>
       <li class="icons-item">
@@ -52,8 +53,10 @@
         <p>Ответим<br>на все вопросы</p>
       </li>
     </ul>
-    <button type="button" class="btn">заказать консультацию</button>
-    <p>или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></p>
+    <div class="apropername">
+      <button type="button" class="btn">заказать консультацию</button>
+      <p>или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></p>
+    </div>
     </section>
 
   <!----------------------------------------- BENEFITS ----------------------------------------->
@@ -95,7 +98,7 @@
 
     <section class="section carousel">
       <button class="btn"><img src="#" alt="Стрелка влево" width="31"></button>
-      <div class="slider"><img src="#" alt="Часы" width="750"></div>
+      <div class="slider"><img src="assets/images/slides/Слайд №1.png" alt="Часы" width="750"></div>
       <button class="btn"><img src="#" alt="Стрелка вправо" width="31"></button>
     </section>
 
@@ -104,20 +107,78 @@
     <section class="section catalog">
       <h2 class="heading">Каталог пульсометров</h2>
       <ul class="catalog-menu">
-        <li class="catalog-menu-item"><button class="btn catalog-btn">для фитнеса</button></li>
-        <li class="catalog-menu-item"><button class="btn catalog-btn">для бега</button></li>
-        <li class="catalog-menu-item"><button class="btn catalog-btn">для триатлона</button></li>
+        <li class="catalog-menu-item"><button class="catalog-btn">для фитнеса</button></li>
+        <li class="catalog-menu-item"><button class="catalog-btn">для бега</button></li>
+        <li class="catalog-menu-item"><button class="catalog-btn">для триатлона</button></li>
       </ul>
+
       <ul class="watch-list">
         <li class="watch-list-item">
           <div>
-            <img src="" alt="Часы" width="140">
+            <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
+            <h3>Пульсометр Polar FT1</h3>
+            <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
+            <a href="#" class="watch-more">ПОДРОБНЕЕ</a>
+            <div class="prices">
+              <p>4750</p>
+              <p>4500</p>
+            </div>    
+            <button class="btn" type="button">КУПИТЬ</button>
+          </div>
+        </li>
+        <li class="watch-list-item">
+          <div>
+            <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
             <h3>Пульсометр Polar FT1</h3>
             <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
             <a href="#" class="watch-more">ПОДРОБНЕЕ</a>
             <p>4750</p>
             <p>4500</p>
-            <button type="button">КУПИТЬ</button>
+            <button class="btn" type="button">КУПИТЬ</button>
+          </div>
+        </li>
+        <li class="watch-list-item">
+          <div>
+            <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
+            <h3>Пульсометр Polar FT1</h3>
+            <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
+            <a href="#" class="watch-more">ПОДРОБНЕЕ</a>
+            <p>4750</p>
+            <p>4500</p>
+            <button class="btn" type="button">КУПИТЬ</button>
+          </div>
+        </li>
+        <li class="watch-list-item">
+          <div>
+            <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
+            <h3>Пульсометр Polar FT1</h3>
+            <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
+            <a href="#" class="watch-more">ПОДРОБНЕЕ</a>
+            <p>4750</p>
+            <p>4500</p>
+            <button class="btn" type="button">КУПИТЬ</button>
+          </div>
+        </li>
+        <li class="watch-list-item">
+          <div>
+            <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
+            <h3>Пульсометр Polar FT1</h3>
+            <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
+            <a href="#" class="watch-more">ПОДРОБНЕЕ</a>
+            <p>4750</p>
+            <p>4500</p>
+            <button class="btn" type="button">КУПИТЬ</button>
+          </div>
+        </li>
+        <li class="watch-list-item">
+          <div>
+            <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
+            <h3>Пульсометр Polar FT1</h3>
+            <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
+            <a href="#" class="watch-more">ПОДРОБНЕЕ</a>
+            <p>4750</p>
+            <p>4500</p>
+            <button class="btn" type="button">КУПИТЬ</button>
           </div>
         </li>
         
@@ -128,8 +189,7 @@
 
     <section class="section reviews">
       <h2 class="heading">отзывы клиентов</h2>
-      <ul class="reviews-list">
-        <li class="reviews-list-item review-1">
+      <div class="reviews-list">
           <img class="review-1-pic" src="assets/images/profilepics/photo_1.png" alt="Фотография участника 1">
           <div class="review-1-text">
             <p class="reviews-name">Ирина Иванченко </p>
@@ -139,8 +199,6 @@
               Новые цели - новый гаджет!
               <br>Спасибо, RunSmart! </p>
           </div>
-        </li>
-        <li class="reviews-list-item review-2">
           <img class="review-2-pic" src="assets/images/profilepics/photo_2.png" alt="Фотография участника 2">
           <div class="review-2-text">
             <p class="reviews-name">Иван Сёмочкин </p>
@@ -150,8 +208,6 @@
               Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br>
               С ними подготовился к своему первому полумарафону! Спасибо!!!</p>
           </div>
-        </li>
-        <li class="reviews-list-item review-3">
           <img  class="review-3-pic"src="assets/images/profilepics/photo_3.png" alt="Фотография участника 3">
           <div class="review-3-text">
             <p class="reviews-name">Юлия Дашкина </p>
@@ -162,8 +218,7 @@
               Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!<br><br>
               Спасибо!!!</p>
             </div>
-        </li>
-      </ul>
+      </div>
     </section>
 
     </main>

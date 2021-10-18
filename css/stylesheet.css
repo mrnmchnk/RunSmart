@@ -5,6 +5,7 @@ html {
 body {
   margin: 0;
   background-color: #F6F6F6;
+  
 }
 
 img {
@@ -25,11 +26,26 @@ img {
   color: white;
 }
 
-/* .main {
+.main {
+  width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-} */
+.title {
+  text-align: end;
+}
+
+.icons {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: flex-end;
+}
 
 .benefits-list {
+  list-style-type: none;
+
   display: flex;
   justify-content: space-around;
 }
@@ -65,10 +81,50 @@ img {
   height: 680px;
 }
 
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.watch-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 303px);
+  grid-template-rows: repeat(2, 442px);
+  grid-gap: 17px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.watch-list-item {
+  border: 1px solid #E8E8E8;
+
+}
+
+
+.catalog-menu {
+  display: flex;
+  justify-content: space-around;
+
+  list-style-type: none;
+}
+
+.catalog-btn {
+  background-color: white;
+}
+
+
+/*------------------------------- Отзывы --------------------------------*/
+
 .reviews-list {
   display: grid;
   grid-template-columns: 1fr 170px 700px 1fr;
-  grid-template-rows: repeat(3, 170px);
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 20px;
+  box-sizing: border-box;
   grid-template-areas: 
     ". pic1 text1 ."
     ". pic2 text2 ."
