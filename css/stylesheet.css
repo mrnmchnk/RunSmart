@@ -65,6 +65,44 @@ img {
   height: 680px;
 }
 
+.reviews-list {
+  display: grid;
+  grid-template-columns: 1fr 170px 700px 1fr;
+  grid-template-rows: repeat(3, 170px);
+  grid-template-areas: 
+    ". pic1 text1 ."
+    ". pic2 text2 ."
+    ". pic3 text3 .";
+}
+
+.review-1-pic {
+  grid-area: pic1;
+}
+
+.review-1-text {
+  grid-area: text1;
+}
+
+.review-2-pic {
+  grid-area: pic2;
+
+}
+
+.review-2-text {
+  grid-area: text2;
+
+}
+
+.review-3-pic {
+  grid-area: pic3;
+
+}
+
+.review-3-text {
+  grid-area: text3;
+
+}
+
 .btn {
   background-color: #C70101;
   border: none;
@@ -93,6 +131,7 @@ img {
 
 .heading {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .consult p {
