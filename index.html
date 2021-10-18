@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
     <title>Run Smart</title>
 </head>
 <body>
 
   <!----------------------------------------- HEADER ----------------------------------------->
-
+  <div class="container">
     <header class="header">
       <div class="logo">
         <p>RunSmart final check</p>
@@ -21,15 +26,16 @@
       </div>
       <div class="call">
         <p>+7 (499) 922-89-74</p>
-        <button type="button">заказать звонок</button>
+        <button type="button"  class="btn">заказать звонок</button>
       </div>
     </header>
 
   <!----------------------------------------- MAIN ----------------------------------------->
 
-    <main class="">
+    <main class="main">
       
-    <section class="first-screen">
+  <div class="first-background">
+    <section class="section first-screen">
     <div class="title">
       <h1>Подбор пульсометра</h1>
       <p>с учётом Вашего уровня подготовки</p>
@@ -39,13 +45,14 @@
       <li class="icons-item">Бесплатная<br>доставка</li>
       <li class="icons-item">Ответим<br>на все вопросы</li>
     </ul>
-    <button type="button">заказать консультацию</button>
+    <button type="button" class="btn">заказать консультацию</button>
     <p>или <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a></p>
     </section>
+  </div>
 
   <!----------------------------------------- BENEFITS ----------------------------------------->
 
-    <section class="benefits">
+    <section class="section benefits">
       <h2 class="headind">НАШИ ПРЕИМУЩЕСТВА</h2>
       <ul class="benefits-list">
         <li class="benefits-list-item">
@@ -61,40 +68,41 @@
         <li class="benefits-list-item">
           <img src="#" alt="Кроссовок" width="70">
           <h3>Учим бегать</h3>
-          <p>Помогаем с обучением <br>правильной технике бега! <br>Дружим с крупнейшей школой бега в России - <span>LOVE RUNNING.</span></p>
+          <p>Помогаем с обучением <br>правильной технике бега! <br>Дружим с крупнейшей школой бега в России - <span class="custom">I LOVE RUNNING.</span></p>
         </li>
       </ul>
     </section>
 
   <!----------------------------------------- CONSULT ----------------------------------------->
 
-    <section class="consult">
-      <h2 class="headind">Получите бесплатную консультациюпо подбору пульсометра </h2>
-      <p>Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</p>
-      <form action="#">
-        <input type="text" placeholder="Ваше имя">
-        <input type="tel" placeholder="Ваш телефон">
-        <input type="email" placeholder="Ваш E-mail">
-        <button type="submit">заказать консультацию</button>
-      </form>
-    </section>
-    
+    <div class="consult-background">
+      <section class="consult">
+        <h2 class="headind">Получите бесплатную консультациюпо подбору пульсометра </h2>
+        <p>Просто заполните форму заявки и мы перезвоним вам в течении 10 минут</p>
+        <form action="#">
+          <input type="text" placeholder="Ваше имя">
+          <input type="tel" placeholder="Ваш телефон">
+          <input type="email" placeholder="Ваш E-mail">
+          <button type="submit"  class="btn">заказать консультацию</button>
+        </form>
+      </section>
+    </div>
   <!----------------------------------------- CAROUSEL ----------------------------------------->
 
-    <section class="carousel">
-      <button><img src="#" alt="Стрелка влево" width="31"></button>
+    <section class="section carousel">
+      <button class="btn"><img src="#" alt="Стрелка влево" width="31"></button>
       <div class="slider"><img src="#" alt="Часы" width="750"></div>
-      <button><img src="#" alt="Стрелка вправо" width="31"></button>
+      <button class="btn"><img src="#" alt="Стрелка вправо" width="31"></button>
     </section>
 
   <!----------------------------------------- CATALOG ----------------------------------------->
 
-    <section class="catalog">
+    <section class="section catalog">
       <h2 class="headind">Каталог пульсометров</h2>
       <ul class="catalog-menu">
-        <li class="catalog-menu-item">для фитнеса</li>
-        <li class="catalog-menu-item">для бега</li>
-        <li class="catalog-menu-item">для триатлона</li>
+        <li class="catalog-menu-item"><button class="btn catalog-btn">для фитнеса</button></li>
+        <li class="catalog-menu-item"><button class="btn catalog-btn">для бега</button></li>
+        <li class="catalog-menu-item"><button class="btn catalog-btn">для триатлона</button></li>
       </ul>
       <ul class="watch-list">
         <li class="watch-list-item">
@@ -102,7 +110,7 @@
             <img src="" alt="Часы" width="140">
             <h3>Пульсометр Polar FT1</h3>
             <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
-            <a href="#">ПОДРОБНЕЕ</a>
+            <a href="#" class="watch-more">ПОДРОБНЕЕ</a>
             <p>4750</p>
             <p>4500</p>
             <button type="button">КУПИТЬ</button>
@@ -114,7 +122,7 @@
     
   <!----------------------------------------- REWIEWS ----------------------------------------->
 
-    <section class="reviews">
+    <section class="section reviews">
       <h2 class="headind">отзывы клиентов</h2>
       <ul class="reviews-list">
         <li class="reviews-list-item">
@@ -155,13 +163,14 @@
     <footer class="footer">
       <div class="contacts">
         <p>Москва, Мясницкий проезд, д.3с1</p>
-        <div>8 (499) 922-89-74</p>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+        <p>8 (499) 922-89-74</p>
+        <ul class="social-icons">
+          <li class="facebook"></li>
+          <li class="insta"></li>
+          <li class="pinterest"></li>
         </ul>
       </div>
     </footer>
+  <div class="container">
 </body>
 </html>

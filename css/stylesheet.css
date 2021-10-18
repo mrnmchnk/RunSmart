@@ -1,0 +1,73 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100vw;
+}
+
+.header {
+  position: absolute;
+  top: 40px;
+  left: 490px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.main {
+
+}
+
+.first-background {
+  width: 100vw;
+  background-image: url(../assets/images/backgrounds/bg.png);
+  background-repeat: no-repeat;
+  
+}
+
+.first-screen {
+  color: white;
+}
+
+
+.consult-background {
+  width: 100vw;
+  background-image: url(../assets/images/backgrounds/bg2.png);
+  background-repeat: no-repeat;
+}
+
+.consult {
+  color: white;
+}
+
+.btn {
+  background-color: #C70101;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.custom {
+  font-family: 'MuseoModerno', cursive;
+  color: C70101;
+}
+
+.contacts {
+  color: white;
+  
+}
+
+.section {
+  width: 950px;
+  border: 1px solid black;
+}
