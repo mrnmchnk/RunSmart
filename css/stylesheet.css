@@ -1,3 +1,7 @@
+
+/*----------------------------------------- GLOBAL -----------------------------------------*/
+
+
 html {
   font-family: 'MuseoModerno', normal, sans-serif;
 }
@@ -5,35 +9,95 @@ html {
 body {
   margin: 0;
   background-color: #F6F6F6;
-  
+  font-size: 14px;
 }
 
 img {
   max-width: 100%;
 }
 
-.container {
-  width: 100vw;
+a {
+  color: #C70101;
 }
+
+h2 {
+  font-weight: 700;
+}
+
+/*----------------------------------------- HEADER -----------------------------------------*/
+
+.button-container a {
+  color: white;
+}
+
 
 .header {
   position: absolute;
-  top: 40px;
-  left: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   width: 950px;
   display: flex;
   justify-content: space-between;
   color: white;
 }
 
+.logo,
+.info,
+.call {
+  padding: 20px;
+}
+
+.call p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.call button {
+  padding: 5px;
+  font-weight: 500;
+  font-size: 12px;
+  width: 153px;
+  height: 32px;
+}
+
+
 .main {
-  width: 1050px;
+  /* width: 1050px; */
   margin-left: auto;
   margin-right: auto;
 }
 
-.title {
+.first-container,
+.benefits-container,
+.consult-container,
+.carousel-container,
+.catalog-container,
+.reviews-container {
+  margin: auto;
+  width: 1000px;
+}
+
+
+.button-container {
   text-align: end;
+}
+
+.title {
+  padding-top: 160px;
+  padding-bottom: 15px;
+  text-align: end;
+  text-transform: uppercase;
+}
+
+.title h1 {
+  font-size: 42px;
+}
+
+.title p {
+  font-size: 24px;
 }
 
 .icons {
@@ -43,6 +107,15 @@ img {
   justify-content: flex-end;
 }
 
+.icons-item {
+  padding: 35px;
+  text-align: center;
+}
+
+.benefits {
+  height: 470px;
+}
+
 .benefits-list {
   list-style-type: none;
 
@@ -50,36 +123,63 @@ img {
   justify-content: space-around;
 }
 
+.benefits-list-item {
+  text-align: center;
+}
 
-/* .first-background {
-  width: 100vw;
-  background-image: url(../assets/images/backgrounds/bg.png);
-  background-repeat: no-repeat;
-  
-} */
+.benefits-list-item h3 {
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
 
 .first-screen {
   background-image: url(../assets/images/backgrounds/bg.png);
   background-repeat: no-repeat;
   /* background-size: 100vw; */
-  height: 600px;
+  height: 650px;
   color: white;
 }
 
+/*----------------------------------------- CONSULT -----------------------------------------*/
 
-/* .consult-background {
-  width: 100vw;
-  background-image: url(../assets/images/backgrounds/bg2.png);
-  background-repeat: no-repeat;
-} */
+
 
 .consult {
   background-image: url(../assets/images/backgrounds/bg2.png);
   background-repeat: no-repeat;
-  /* background-size: 100vw; */
+  background-size: 100vw;
   color: white;
   height: 680px;
 }
+
+
+.consult-container {
+  text-align: left;
+  
+}
+
+.consult-container p {
+  font-size: 20px;
+  margin-bottom: 36px;
+}
+
+
+.heading {
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align-last: left;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/*----------------------------------------- CAROUSEL -----------------------------------------*/
+
+
+
 
 .carousel {
   display: flex;
@@ -104,6 +204,9 @@ img {
 
 }
 
+.catalog {
+  margin: auto;
+}
 
 .catalog-menu {
   display: flex;
@@ -163,7 +266,9 @@ img {
   background-color: #C70101;
   border: none;
   border-radius: 5px;
-
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 25px;
 }
 
 .companies {
@@ -177,26 +282,36 @@ img {
 
 .contacts {
   color: white;
-  
+  background-color: #C70101;
 }
 
 .section {
   /* width: 950px; */
-  border: 1px solid black;
+  /* height: auto; */
+  /* border: 1px solid black; */
 }
 
-.heading {
-  text-align: center;
-  text-transform: uppercase;
-}
 
-.consult p {
-  text-align: center;
-}
+
+/* . */
 
 .forms {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 10px;
+}
+
+.map {
+  z-index: 0;
+}
+
+.footer {
+  background-color: #C70101;
+  position: absolute;
+  /* z-index: 1; */
+  left: 730px;
+  /* bottom: 360px; */
+  width: 460px;
+  height: 270px;
 }
