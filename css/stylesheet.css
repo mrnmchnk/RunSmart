@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #F6F6F6;
+  background-color: #ffffff;
   font-size: 14px;
 }
 
@@ -23,6 +23,25 @@ a {
 h2 {
   font-weight: 700;
 }
+
+.heading {
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* .heading {
+  padding-top: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+} */
+
+
 
 /*----------------------------------------- HEADER -----------------------------------------*/
 
@@ -112,8 +131,16 @@ h2 {
   text-align: center;
 }
 
+/*----------------------------------------- BENEFITS -----------------------------------------*/
+
+
 .benefits {
   height: 470px;
+  background-color: #F6F6F6;
+}
+
+.benefits-heading {
+  margin-bottom: 65px;
 }
 
 .benefits-list {
@@ -155,6 +182,10 @@ h2 {
   height: 680px;
 }
 
+.consult h2 {
+  text-align-last: left;
+}
+
 
 .consult-container {
   text-align: left;
@@ -166,15 +197,32 @@ h2 {
   margin-bottom: 36px;
 }
 
+.consult-container input {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 0px;
+  width: 270px;
 
-.heading {
-  padding-top: 100px;
-  text-transform: uppercase;
-  text-align-last: left;
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 8px;
 }
+
+.forms {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-row-gap: 10px;
+  justify-items: start;
+}
+
+
+
+.forms button {
+  width: 300px;
+  
+}
+
+
+
 
 /*----------------------------------------- CAROUSEL -----------------------------------------*/
 
@@ -204,20 +252,110 @@ h2 {
 
 }
 
+
+/*----------------------------------------- CATALOG -----------------------------------------*/
+
+
 .catalog {
   margin: auto;
 }
 
+.catalog-heading {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
 .catalog-menu {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: center;
   list-style-type: none;
+}
+
+
+.catalog-menu-item {
+  transform: skewX(-30deg);
+  margin: 10px;
+  background-color: #C70101;
+
 }
 
 .catalog-btn {
   background-color: white;
+  border: 1px solid #D0D0D0;
+  padding: 17px 30px;
+  width: 220px;
+  text-transform: uppercase;
+
 }
+
+.btn-fitness {
+  background-color: #C70101;
+  color: white;
+  border: none;
+}
+
+.btn-text {
+  display: block;
+  transform: skewX(30deg);
+}
+
+/* .btn-fitness {
+  background-color: #C70101;
+} */
+
+.watch-list-item {
+  box-sizing: border-box;
+  width: 303px;
+  height: 442px;
+}
+
+.watch-list-item img {
+  margin-top: 20px;
+}
+
+.watch-list-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.watch-list-item hr {
+  width: 80%;
+  color: #E8E8E8;
+  margin: 20px;
+}
+
+.buy {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.buy button {
+  width: 135px;
+  height: 44px;
+  padding: 0;
+}
+
+.prices {
+  text-align: left;
+  margin: 0;
+}
+
+.prices p:first-child {
+  text-decoration: line-through;
+  color: #555555;
+  margin: 0;
+}
+
+.prices p:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
 
 
 /*------------------------------- Отзывы --------------------------------*/
@@ -268,7 +406,8 @@ h2 {
   border-radius: 5px;
   text-transform: uppercase;
   color: white;
-  padding: 10px 25px;
+  padding: 20px;
+
 }
 
 .companies {
@@ -285,22 +424,15 @@ h2 {
   background-color: #C70101;
 }
 
-.section {
-  /* width: 950px; */
-  /* height: auto; */
-  /* border: 1px solid black; */
-}
+/* .section {
+  width: 950px; 
+  height: auto;
+   border: 1px solid black; 
+} */
 
 
 
-/* . */
 
-.forms {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-row-gap: 10px;
-}
 
 .map {
   z-index: 0;
