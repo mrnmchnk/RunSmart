@@ -106,8 +106,6 @@ h2 {
   margin-right: auto;
 }
 
-
-
 .container {
   margin: auto;
   width: 1000px;
@@ -205,7 +203,6 @@ h2 {
   text-align: left;
 }
 
-
 .consult-container {
   text-align: left;
   
@@ -233,8 +230,6 @@ h2 {
   justify-items: start;
 }
 
-
-
 .forms button {
   width: 300px;
   
@@ -248,12 +243,6 @@ h2 {
   align-items: center; 
 }
 
-/* .mySwiper {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-} */
-
 .chevron {
   flex-shrink: 0;
   width: 31px;
@@ -262,14 +251,6 @@ h2 {
   cursor: pointer;
   background-color: white;
 }
-
-/* .chevron-left {
-  background-image: url(/assets/images/chevrons/chevron_left_solid.png);
-} */
-
-/* .chevron-right {
-  background-image: url(/assets/images/chevrons/chevron_right_solid.png);
-} */
 
 .swiper {
   margin: 100px 60px;
@@ -304,9 +285,6 @@ h2 {
   height: 100%; */
   object-fit: cover;
 }
-
-
-
 
 .watch-list {
   list-style-type: none;
