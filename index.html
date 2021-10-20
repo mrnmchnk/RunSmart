@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <title>RunSmart</title>
 </head>
 <body>
@@ -31,26 +35,25 @@
 
   <!----------------------------------------- MAIN ----------------------------------------->
 
-    <main class="main">
-      
-    <section class="section first-screen">
-      <div class="first-container">
+  <main class="main">
+    <section class="section introduction">
+      <div class="container introduction-container">
         <div class="title">
           <h1>ПОДБОР ПУЛЬСОМЕТРА</h1>
           <p>с учётом Вашего уровня подготовки</p>
         </div>
         <ul class="icons">
           <li class="icons-item">
-            <img src="assets/images/first screen logos/019_timer_time_stopwatch_2-64.png" alt="Таймер">
+            <img src="assets/images/first_screen_logos/019_timer_time_stopwatch_2-64.png" alt="Таймер">
             <br>
             <p>Время подбора:<br>10 минут</p>
           </li>
           <li class="icons-item">
-            <img src="assets/images/first screen logos/app 08 hand cart 64.png" alt="Тележка">
+            <img src="assets/images/first_screen_logos/app 08 hand cart 64.png" alt="Тележка">
             <p>Бесплатная<br>доставка</p>
           </li>
           <li class="icons-item">
-            <img src="assets/images/first screen logos/messages 64.png" alt="Окно чата">
+            <img src="assets/images/first_screen_logos/messages 64.png" alt="Окно чата">
             <p>Ответим<br>на все вопросы</p>
           </li>
         </ul>
@@ -64,21 +67,21 @@
   <!----------------------------------------- BENEFITS ----------------------------------------->
 
     <section class="section benefits">
-      <div class="benefits-container">
+      <div class="container benefits-container">
         <h2 class="heading benefits-heading">НАШИ ПРЕИМУЩЕСТВА</h2>
         <ul class="benefits-list">
           <li class="benefits-list-item">
-            <img src="assets/images/benefits logos/cup.png" alt="Кубок" width="70">
+            <img src="assets/images/benefits_logos/cup.png" alt="Кубок" width="70">
             <h3>Делимся опытом</h3>
             <p>Наши сотрудники всегда готовы<br>поделиться своим опытом,<br>так как сами бегают полумарафоны,<br>переплыли Босфор, готовятся к<br>соревнованиям по триатлону!</p>
           </li>
           <li class="benefits-list-item">
-            <img src="assets/images/benefits logos/heart.png" alt="Сердце" width="70">
+            <img src="assets/images/benefits_logos/heart.png" alt="Сердце" width="70">
             <h3>Заботимся о здоровье</h3>
             <p>Мы работаем для того,<br>чтобы Ваши занятия спортом шли на<br>пользу Вашему здоровью и были в<br>радость Вам и Вашим близким!</p>
           </li>
           <li class="benefits-list-item">
-            <img src="assets/images/benefits logos/shoe.png" alt="Кроссовок" width="70">
+            <img src="assets/images/benefits_logos/shoe.png" alt="Кроссовок" width="70">
             <h3>Учим бегать</h3>
             <p>Помогаем с обучением<br>правильной технике бега!<br>Дружим с крупнейшей школой бега в<br>России - <span class="custom"><a href="#">I LOVE RUNNING.</a></span></p>
           </li>
@@ -89,7 +92,7 @@
   <!----------------------------------------- CONSULT ----------------------------------------->
 
       <section class="consult">
-      <div class="consult-container">
+      <div class="container consult-container">
         <h2 class="heading consult-heading">Получите бесплатную консультацию по подбору пульсометра</h2>
         <p>Просто заполните форму заявки<br>и мы перезвоним вам в течении 10 минут</p>
         <form class="forms" action="#">
@@ -103,19 +106,26 @@
   <!----------------------------------------- CAROUSEL ----------------------------------------->
 
     <section class="section carousel">
-      <div class="carousel-container">
-        <input type="image" id="image" alt="left"
-        src="assets/images/chevrons/chevron left solid.png">
-        <div class="slider"><img src="assets/images/slides/Слайд №1.png" alt="Часы" width="750"></div>
-        <input type="image" id="image" alt="right"
-        src="assets/images/chevrons/chevron right solid.png">
+      <div class="container carousel-container">
+        <div class="swiper mySwiper">
+          <button class="chevron chevron-left" type="button"></button>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/images/slides/slide1.png" alt="Часы"></div>
+            <div class="swiper-slide"><img src="assets/images/slides/slide1.png" alt="Часы"></div>
+            <div class="swiper-slide"><img src="assets/images/slides/slide1.png" alt="Часы"></div>
+          </div>
+          <button class="chevron chevron-right" type="button"></button>
+        </div>
+    
+
+
       </div>
     </section>
 
   <!----------------------------------------- CATALOG MENU ----------------------------------------->
 
     <section class="section catalog">
-      <div class="catalog-container">
+      <div class="container catalog-container">
         <h2 class="heading catalog-heading">Каталог пульсометров</h2>
         <ul class="catalog-menu">
           <li class="catalog-menu-item">
@@ -137,8 +147,8 @@
   <!----------------------------------------- WATCH ----------------------------------------->
 
 
-        <ul class="watch-list">
-          <li class="watch-list-item">
+        <div class="watch-list">
+          <article class="watch-list-item">
               <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
               <h3>Пульсометр Polar FT1</h3>
               <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
@@ -151,9 +161,9 @@
                 </div>    
                 <button class="btn" type="button">КУПИТЬ</button>
               </div>
-          </li>
+          </article>
           
-          <li class="watch-list-item">
+          <article class="watch-list-item">
               <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
               <h3>Пульсометр Suunto M2</h3>
               <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
@@ -166,11 +176,11 @@
                 </div>    
                 <button class="btn" type="button">КУПИТЬ</button>
               </div>
-          </li>
+          </article>
 
-  <!----------------------------------------- SECOND WATCH ----------------------------------------->
+  <!----------------------------------------- THIRD WATCH ----------------------------------------->
 
-          <li class="watch-list-item">
+          <article class="watch-list-item">
             <ul>
               <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
               <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
@@ -186,9 +196,9 @@
                 </div>    
                 <button class="btn" type="button">КУПИТЬ</button>
               </div>
-          </li>
+          </article>
 
-          <li class="watch-list-item">
+          <article class="watch-list-item">
               <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
               <h3>Пульсометр Polar FT1</h3>
               <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
@@ -201,9 +211,9 @@
                 </div>    
                 <button class="btn" type="button">КУПИТЬ</button>
               </div>
-          </li>
+          </article>
 
-          <li class="watch-list-item">
+          <article class="watch-list-item">
               <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
               <h3>Пульсометр Suunto M2</h3>
               <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
@@ -216,9 +226,9 @@
                 </div>    
                 <button class="btn" type="button">КУПИТЬ</button>
               </div>
-          </li>
+          </article>
 
-          <li class="watch-list-item">
+          <article class="watch-list-item">
               <img src="assets/images/watchface/photo.png" alt="Часы" width="140">
               <h3>Пульсометр Polar FT4</h3>
               <p>Для первых шагов в тренировках, основанных на сердечном ритме</p>
@@ -231,17 +241,17 @@
                 </div>    
                 <button class="btn" type="button">КУПИТЬ</button>
               </div>
-          </li>
+          </article>
 
           
-        </ul>
+        </div>
       </div>
     </section>
     
   <!----------------------------------------- REvIEwS ----------------------------------------->
 
     <section class="section reviews">
-      <div class="reviews-container">
+      <div class="container reviews-container">
         <h2 class="heading reviews-heading">отзывы клиентов</h2>
         <div class="reviews-list">
             <img class="review-1-pic" src="assets/images/profilepics/photo_1.png" alt="Фотография участника 1">
@@ -284,25 +294,41 @@
             <p>Москва, Мясницкий проезд, д.3с1</p>
             <p>8 (499) 922-89-74</p>
             <ul class="social-icons">
-              <li class="facebook">
-                <img src="assets/images/socialicons/circle.svg" alt="">
-                <img class="f-ico" src="assets/images/socialicons/facebook.svg" alt="">
+              <li class="social-icons-facebook">
+                <div class="circle circle-facebook">
+                  <img src="assets/images/socialicons/facebook.svg" alt="F">
+                </div>
               </li>
-              <li class="insta">
-                <img src="assets/images/socialicons/circle.svg" alt="">
+              <li class="social-icons-insta">
+                <div class="circle circle-insta">
+                  <img src="assets/images/socialicons/instaframe.svg" alt="">
+                  <img src="assets/images/socialicons/instalense.svg" alt="">
+                  <img src="assets/images/socialicons/instaflash.svg" alt="">
+                </div>
               </li>
-              <li class="pinterest">
-                <img src="assets/images/socialicons/circle.svg" alt="">
+              <li class="social-icons-pinterest">
+                <div class="circle circle-pinterest">
+                  <img src="assets/images/socialicons/pinterest.svg" alt="P">
+                  
+                </div>
               </li>
             </ul>
           </div>
         </footer>
       </div>
     </section>
-    </main>
+  </main>
   
   <!----------------------------------------- FOOTER ----------------------------------------->
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".chevron-right",
+        prevEl: ".chevron-left"
+      }
+    });
+  </script>
   
 </body>
 </html>
